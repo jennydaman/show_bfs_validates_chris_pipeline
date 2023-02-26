@@ -1,0 +1,10 @@
+The code here implements the basic idea described here:
+
+https://github.com/FNNDSC/ChRIS_ultron_backEnd/discussions/481#discussioncomment-5109915
+
+ChRIS pipelines are directed acyclic graphs.
+Scheduling of a ChRIS pipeline and validation of a ChRIS pipeline are two different problems.
+Even so, these two problems share the same solution: breadth-first search.
+If the graph is BFS-traversable where every node is visited exactly once,
+it is implied the graph is a single connected component and a directed
+acyclic graph. These are the graph property criteria for ChRIS pipeline validity.

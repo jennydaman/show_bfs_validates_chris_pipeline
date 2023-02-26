@@ -1,0 +1,39 @@
+{
+  "authors": "Jennings",
+  "name": "contains cycles",
+  "description": "a pipeline which contains cycles",
+  "category": "MRI",
+  "locked": false,
+  "plugin_tree": [
+    {
+      "title": "A",
+      "plugin_name": "pl-simpledsapp",
+      "plugin_version": "2.1.0",
+      "previous_index": null
+    },
+    {
+      "title": "AA",
+      "plugin_name": "pl-simpledsapp",
+      "plugin_version": "2.1.0",
+      "previous_index": 0
+    },
+    {
+      "title": "B",
+      "plugin_name": "pl-topologicalcopy",
+      "plugin_version": "0.2",
+      "previous_index": 1,
+      "plugin_parameter_defaults": [
+        {
+          "name": "plugininstances",
+          "default": "0,1"
+        }
+      ]
+    },
+    {
+      "title": "C",
+      "plugin_name": "pl-simpledsapp",
+      "plugin_version": "2.1.0",
+      "previous_index": 2
+    }
+  ]
+}
