@@ -1,0 +1,33 @@
+{
+  "authors": "Jorge",
+  "name": "countereexample given on 2023-02-26 10:29 (right variation)",
+  "description": "A simple example is two node hanging from the root and one of them also hanging from the sibling.",
+  "category": "Counterexample",
+  "locked": false,
+  "plugin_tree": [
+    {
+      "title": "root",
+      "plugin_name": "pl-simpledsapp",
+      "plugin_version": "2.1.0",
+      "previous_index": null
+    },
+    {
+      "title": "hanging_from_root",
+      "plugin_name": "pl-simpledsapp",
+      "plugin_version": "2.1.0",
+      "previous_index": 0
+    },
+    {
+      "title": "hanging_from_root_also_from_sibling",
+      "plugin_name": "pl-topologicalcopy",
+      "plugin_version": "0.2",
+      "previous_index": 0,
+      "plugin_parameter_defaults": [
+        {
+          "name": "plugininstances",
+          "default": "0,1"
+        }
+      ]
+    }
+  ]
+}
