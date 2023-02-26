@@ -1,0 +1,39 @@
+{
+  "authors": "Jennings",
+  "name": "a cycle between siblings",
+  "description": "Minimal example of 3 nodes where there is a cycle between siblings",
+  "category": "Counterexample",
+  "locked": false,
+  "plugin_tree": [
+    {
+      "title": "root",
+      "plugin_name": "pl-simpledsapp",
+      "plugin_version": "2.1.0",
+      "previous_index": null
+    },
+    {
+      "title": "sibling1",
+      "plugin_name": "pl-topologicalcopy",
+      "plugin_version": "0.2",
+      "previous_index": 0,
+      "plugin_parameter_defaults": [
+        {
+          "name": "plugininstances",
+          "default": "0,2"
+        }
+      ]
+    },
+    {
+      "title": "sibling2",
+      "plugin_name": "pl-topologicalcopy",
+      "plugin_version": "0.2",
+      "previous_index": 0,
+      "plugin_parameter_defaults": [
+        {
+          "name": "plugininstances",
+          "default": "0,1"
+        }
+      ]
+    }
+  ]
+}
